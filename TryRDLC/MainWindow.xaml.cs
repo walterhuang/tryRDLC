@@ -77,5 +77,10 @@ namespace TryRDLC
                 }
             }
         }
+
+        private void PrintReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            new LocalReportHelper(ReportViewer.LocalReport).Print();
+        }
     }
 }

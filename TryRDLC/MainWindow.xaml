@@ -11,10 +11,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition/>
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Button x:Name="CreateReportButton" Content="Make Report" Click="CreateReportButton_Click"/>
         <WindowsFormsHost Grid.Row="1">
             <rv:ReportViewer x:Name="ReportViewer"/>
         </WindowsFormsHost>
+        <Button Grid.Row="2" x:Name="PrintReportButton" Content="Print Report" Click="PrintReportButton_Click" />
     </Grid>
 </Window>
